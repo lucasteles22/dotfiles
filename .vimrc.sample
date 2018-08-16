@@ -1,0 +1,4 @@
+" Local config
+if filereadable($HOME . "/.config/local/.vimrc.local")
+ source ~/.config/local/.vimrc.local
+endif

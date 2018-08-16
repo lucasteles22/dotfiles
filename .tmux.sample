@@ -1,0 +1,2 @@
+# Local config
+if-shell "[ -f ~/.config/local/.tmux.local ]" 'source ~/.config/local/.tmux.local'

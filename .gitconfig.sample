@@ -1,0 +1,5 @@
+[user]
+	email = lucasteles22@gmail.com
+	name = Lucas Teles
+[core]
+	excludesfile = /home/lucas/.gitignore

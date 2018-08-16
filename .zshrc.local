@@ -1,0 +1,38 @@
+[[ -f ~/.config/local/.zshrc.config ]] && source ~/.config/local/.zshrc.config
+
+export VISUAL=vim
+export EDITOR=$VISUAL
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+
+plugins=(
+  git
+  zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_NODE_SHOW=false
+SPACESHIP_RUBY_SHOW=false
+SPACESHIP_DOCKER_SHOW=false
+
+## Activate vi / vim mode:
+bindkey -v
+
+# Remove delay when entering normal mode (vi)
+KEYTIMEOUT=1
+function zle-line-init zle-keymap-select {
+  NORMAL_MODE="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+  INSERT_MODE="%{$fg_bold[red]%} [% INSERT]%  %{$reset_color%}"
+  RPS1="${${KEYMAP/vicmd/$NORMAL_MODE}/(main|viins)/$INSERT_MODE}"
+  zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
