@@ -13,6 +13,8 @@ plugins=(
   zsh-autosuggestions
 )
 
+alias vdocker="source ~/docker/bin/activate"
+
 source $ZSH/oh-my-zsh.sh
 
 SPACESHIP_PACKAGE_SHOW=false
