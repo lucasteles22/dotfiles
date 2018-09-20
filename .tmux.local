@@ -36,7 +36,6 @@ bind l resize -R 10
 bind-key -r C-h select-window -t :-
 bind-key -r C-l select-window -t :+
 
-
 #New window on current directory
 bind '%' split-window -h -c '#{pane_current_path}'  # Split panes horizontal
 bind '"' split-window -v -c '#{pane_current_path}'  # Split panes vertically
