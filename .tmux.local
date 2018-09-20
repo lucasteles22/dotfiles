@@ -6,10 +6,10 @@ bind-key C-a send-prefix
 set -g @tpm_plugins '                \
     tmux-plugins/tpm                 \
     tmux-plugins/tmux-sensible       \
-    thewtex/tmux-mem-cpu-load        \
     lucasteles22/tmux-onedark-theme  \
+    samoshkin/tmux-plugin-sysstat    \
 '
-set -g @onedark_widgets '#($TMUX_PLUGIN_MANAGER_PATH/tmux-mem-cpu-load --graph-lines 0 --mem-mode 0 --averages-count 0 --interval 2)#[default]'
+set -g @onedark_widgets ' #{sysstat_cpu} | #{sysstat_mem} '
 
 # Default terminal
 set-option -g default-shell /bin/zsh
