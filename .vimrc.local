@@ -197,3 +197,5 @@ let g:airline_theme= 'jellybeans'
 
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
