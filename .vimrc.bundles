@@ -42,6 +42,7 @@ Plug 'tpope/vim-endwise', {'for': ['elixir', 'ruby']}
 Plug 'posva/vim-vue'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-surround'
+Plug 'moll/vim-node'
 
 " Tools
 Plug 'tpope/vim-fugitive'
