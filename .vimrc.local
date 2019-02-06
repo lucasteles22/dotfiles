@@ -199,13 +199,14 @@ set diffopt+=vertical
 map <C-p> :Files<cr>
 nmap <C-p> :Files<cr>
 
-colorscheme jellybeans
+let g:enable_bold_font = 1
+colorscheme hybrid_material
 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme= 'jellybeans'
+let g:airline_theme= 'base16'
 
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
