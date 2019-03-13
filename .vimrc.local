@@ -74,7 +74,7 @@ set ttyfast
 set re=1
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+" set list listchars=tab:»·,trail:·,nbsp:·
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
@@ -201,6 +201,7 @@ nmap <C-p> :Files<cr>
 
 let g:enable_bold_font = 1
 colorscheme hybrid_material
+set background=dark
 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
