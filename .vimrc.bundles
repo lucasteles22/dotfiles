@@ -32,6 +32,7 @@ Plug 'tpope/vim-sensible'
 Plug 'flazz/vim-colorschemes'
 
 " Languages and frameworks"
+Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
@@ -43,6 +44,14 @@ Plug 'posva/vim-vue'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-surround'
 Plug 'moll/vim-node'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 
 " Tools
 Plug 'tpope/vim-fugitive'
@@ -62,6 +71,7 @@ Plug 'exu/pgsql.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/supertab'
 Plug 'rainerborene/vim-reek'
+Plug 'editorconfig/editorconfig-vim'
 
 " Lint
 Plug 'w0rp/ale'
