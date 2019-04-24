@@ -11,6 +11,8 @@ set -g @tpm_plugins '                \
 '
 set -g @onedark_widgets ' #{sysstat_cpu} | #{sysstat_mem} '
 
+set -g  default-terminal "tmux-256color"
+
 # Default terminal
 set-option -g default-shell /bin/zsh
 
