@@ -1,0 +1,5 @@
+#!/bin/bash
+" Local config
+if filereadable($HOME . "/.config/local/ranger/rc.conf")
+ source ~/.config/local/ranger/rc.conf
+endif
