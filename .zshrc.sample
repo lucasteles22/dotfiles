@@ -1,0 +1,7 @@
+# Path to your oh-my-zsh installation.
+export ZSH="/home/lucas/.oh-my-zsh"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+[[ -f ~/.config/local/.zshrc.local ]] && source ~/.config/local/.zshrc.local
+
+eval "$(rbenv init -)"
