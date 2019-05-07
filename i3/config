@@ -58,7 +58,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec dbus-launch gnome-terminal
+bindsym $mod+Return exec dbus-launch gnome-terminal --hide-menubar
 
 # kill focused window
 bindsym $mod+Shift+q kill
