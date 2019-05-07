@@ -6,12 +6,14 @@ bind-key C-a send-prefix
 set -g @tpm_plugins '                \
     tmux-plugins/tpm                 \
     tmux-plugins/tmux-sensible       \
-    lucasteles22/tmux-onedark-theme  \
+    jimeh/tmux-themepack             \
     samoshkin/tmux-plugin-sysstat    \
 '
-set -g @onedark_widgets ' #{sysstat_cpu} | #{sysstat_mem} '
+# set -g @onedark_widgets ' #{sysstat_cpu} | #{sysstat_mem} '
+#
+set -g @themepack 'powerline/block/orange'
 
-set -g  default-terminal "tmux-256color"
+set -g default-terminal "tmux-256color"
 
 # Default terminal
 set-option -g default-shell /bin/zsh
@@ -31,10 +33,10 @@ bind-key x kill-pane
 
 # act like vim
 setw -g mode-keys vi
-bind h resize -L 10
-bind j resize -D 10
-bind k resize -U 10
-bind l resize -R 10
+bind h resize-window -L 10
+bind j resize-window -D 10
+bind k resize-window -U 10
+bind l resize-window -R 10
 bind-key -r C-h select-window -t :-
 bind-key -r C-l select-window -t :+
 
@@ -65,3 +67,8 @@ set -sg escape-time 0
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
+
+# Override bg status bar from plugin
+set -g status-bg default
+set-option -g status-right ''
+set -g status-left "#[fg=colour233,bg=colour130,bold] #S "
