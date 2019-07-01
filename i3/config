@@ -21,6 +21,7 @@ bindsym --release Control+Print exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg'
 
 # Clipboard manager
 exec --no-startup-id clipit
+exec --no-startup-id compton
 ##########################################################################################################
 #
 # Start polybar
@@ -62,7 +63,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec dbus-launch gnome-terminal --hide-menubar
+bindsym $mod+Return exec dbus-launch termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
