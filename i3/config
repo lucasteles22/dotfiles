@@ -19,9 +19,17 @@ bindsym XF86MonBrightnessDown exec light -U 20 # decrease screen brightness
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 bindsym --release Control+Print exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 
+##########################################################################################################
+########################## Config start I3 ###########################
+##########################################################################################################
 # Clipboard manager
 exec --no-startup-id clipit
+
+# Composition manager
 exec --no-startup-id compton
+
+# Restore wallpaper
+exec --no-startup-id nitrogen --restore
 ##########################################################################################################
 #
 # Start polybar
