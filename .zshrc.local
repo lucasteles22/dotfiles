@@ -1,4 +1,4 @@
-[[ -f ~/.config/local/.zshrc.config ]] && source ~/.config/local/.zshrc.config
+ZSH_THEME="spaceship"
 
 export VISUAL=vim
 export EDITOR=$VISUAL
@@ -40,3 +40,5 @@ zle -N zle-keymap-select
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 neofetch
+
+[[ -f ~/.config/local/.zshrc.functions ]] && source ~/.config/local/.zshrc.functions
