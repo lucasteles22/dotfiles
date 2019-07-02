@@ -1,0 +1,4 @@
+reload_zsh_config()
+{
+  [[ -f ~/.config/local/.zshrc.config ]] && source ~/.config/local/.zshrc.config
+}
