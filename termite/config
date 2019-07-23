@@ -1,4 +1,2 @@
 [options]
-font = Monospace 9
-font = xos4 Terminus 12px
-font = Fira Mono Medium 11
+font = Fira Mono for Powerline 11
