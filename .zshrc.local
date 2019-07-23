@@ -15,6 +15,11 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+# alias
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcr='docker-compose run --rm'
+
 source $ZSH/oh-my-zsh.sh
 
 SPACESHIP_PACKAGE_SHOW=false
