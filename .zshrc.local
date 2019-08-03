@@ -46,4 +46,6 @@ zle -N zle-keymap-select
 
 neofetch
 
+source /usr/share/nvm/init-nvm.sh
+
 [[ -f ~/.config/local/.zshrc.functions ]] && source ~/.config/local/.zshrc.functions
