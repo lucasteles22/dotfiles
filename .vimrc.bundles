@@ -44,6 +44,7 @@ Plug 'posva/vim-vue'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-surround'
 Plug 'moll/vim-node'
+Plug 'ekalinin/dockerfile.vim'
 " if has('nvim')
 "   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " else
@@ -72,9 +73,14 @@ Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/supertab'
 Plug 'rainerborene/vim-reek'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'christoomey/vim-run-interactive'
+
+" Auto complete
+Plug 'ycm-core/YouCompleteMe'
 
 " Lint
 Plug 'w0rp/ale'
+Plug 'vim-syntastic/syntastic'
 
 " Dependencies of snipmate
 " Plug 'MarcWeber/vim-addon-mw-utils'
