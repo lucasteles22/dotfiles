@@ -74,6 +74,7 @@ Plug 'ervandew/supertab'
 Plug 'rainerborene/vim-reek'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'christoomey/vim-run-interactive'
+Plug 'editorconfig/editorconfig-vim'
 
 " Auto complete
 Plug 'ycm-core/YouCompleteMe'
