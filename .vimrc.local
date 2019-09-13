@@ -9,6 +9,8 @@ endif
 :autocmd InsertEnter * set cul
 :autocmd InsertLeave * set nocul
 
+set mmp=5000
+
 " Leader
 let mapleader = " "
 
