@@ -1,19 +1,19 @@
 # My custom config
 #
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master 5%+ && amixer -q sset Master unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master 5%- && amixer -q sset Master unmute"
 bindsym XF86AudioMute exec "amixer -q set Master toggle && amixer -q set Headphone unmute && amixer -q set Speaker unmute"
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 20 # decrease screen brightness
-
-# Media player controls
-# bindsym XF86AudioPlay exec playerctl play
-# bindsym XF86AudioPause exec playerctl pause
-# bindsym XF86AudioNext exec playerctl next
-# bindsym XF86AudioPrev exec playerctl previous
 
 # Screenshot manager
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
