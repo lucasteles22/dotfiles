@@ -218,7 +218,7 @@ hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme= 'base16'
+let g:airline_theme= 'simple'
 
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
