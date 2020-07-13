@@ -45,6 +45,7 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-surround'
 Plug 'moll/vim-node'
 Plug 'ekalinin/dockerfile.vim'
+Plug 'OmniSharp/omnisharp-vim'
 " if has('nvim')
 "   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " else
