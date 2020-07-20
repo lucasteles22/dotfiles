@@ -46,6 +46,7 @@ Plug 'tpope/vim-surround'
 Plug 'moll/vim-node'
 Plug 'ekalinin/dockerfile.vim'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'hashivim/vim-terraform'
 Plug 'leafgarland/typescript-vim'
 " if has('nvim')
 "   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -69,6 +70,7 @@ Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ivalkeen/vim-simpledb'
 Plug 'exu/pgsql.vim'
 Plug 'tomtom/tcomment_vim'
@@ -77,6 +79,7 @@ Plug 'rainerborene/vim-reek'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'christoomey/vim-run-interactive'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ryanoasis/vim-devicons'
 
 " Auto complete
 " Plug 'ycm-core/YouCompleteMe'
