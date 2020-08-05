@@ -16,8 +16,8 @@ bindsym XF86MonBrightnessUp exec light -A 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 20 # decrease screen brightness
 
 # Screenshot manager
-bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
-bindsym --release Control+Print exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+bindsym Print exec maim -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png
+bindsym --release Control+Print exec maim --select "/home/$USER/Pictures/$(date +%s).png"
 
 ##########################################################################################################
 ########################## Config start I3 ###########################
