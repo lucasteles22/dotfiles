@@ -66,6 +66,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'yggdroot/indentline'
@@ -80,6 +81,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'christoomey/vim-run-interactive'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'liuchengxu/vim-clap'
 
 " Auto complete
 " Plug 'ycm-core/YouCompleteMe'

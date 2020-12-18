@@ -190,6 +190,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_set_balloons = 1
 let g:ale_linter_aliases = {'vue': ['vue', 'javascript'], 'jsx': ['css', 'javascript']}
 let g:ale_linters = {
+\   'cs': ['OmniSharp'],
 \   'jsx': ['stylelint', 'eslint'],
 \   'vue': ['eslint', 'vls'],
 \   'javascript': ['eslint'],
@@ -223,5 +224,10 @@ let g:airline_theme= 'simple'
 
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
+" Use the stdio version of OmniSharp-roslyn - this is the default
+let g:OmniSharp_server_stdio = 1
+let g:OmniSharp_server_use_mono = 1
+let g:OmniSharp_selector_ui = 'fzf' " Use fzf
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
