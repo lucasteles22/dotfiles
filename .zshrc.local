@@ -1,4 +1,6 @@
-ZSH_THEME="spaceship"
+# START Config for powerlevel10k theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
+# END Config for powerlevel10k theme
 
 export VISUAL=vim
 export EDITOR=$VISUAL
@@ -16,17 +18,18 @@ plugins=(
   web-search
 )
 
-# alias
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 alias dcr='docker-compose run --rm'
 
 source $ZSH/oh-my-zsh.sh
 
+# START Config for SPACESHIP theme
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_NODE_SHOW=false
 SPACESHIP_RUBY_SHOW=false
 SPACESHIP_DOCKER_SHOW=false
+# END Config for SPACESHIP theme
 
 ## Activate vi / vim mode:
 bindkey -v
@@ -48,5 +51,9 @@ zle -N zle-keymap-select
 neofetch
 
 source /usr/share/nvm/init-nvm.sh
+
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [[ -f ~/.config/local/.zshrc.functions ]] && source ~/.config/local/.zshrc.functions
