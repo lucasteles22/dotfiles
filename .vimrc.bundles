@@ -70,7 +70,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'yggdroot/indentline'
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ivalkeen/vim-simpledb'
 Plug 'exu/pgsql.vim'
@@ -81,7 +81,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'christoomey/vim-run-interactive'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'liuchengxu/vim-clap'
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 
 " Auto complete
 " Plug 'ycm-core/YouCompleteMe'

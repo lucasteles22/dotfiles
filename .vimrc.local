@@ -229,5 +229,6 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 let g:OmniSharp_server_stdio = 1
 let g:OmniSharp_server_use_mono = 1
 let g:OmniSharp_selector_ui = 'fzf' " Use fzf
+set rtp+=/usr/local/opt/fzf
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
