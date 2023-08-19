@@ -1,0 +1,23 @@
+font:
+  normal:
+    family: Fira Mono for Powerline
+    style: Regular
+
+  bold:
+    family: Fira Mono for Powerline
+    style: Bold
+
+  italic:
+    family: Fira Mono for Powerline
+    style: Italic
+
+  bold_italic:
+    family: Fira Mono for Powerline
+    style: Bold Italic
+  size: 11
+
+window:
+  opacity: 0.88
+
+import:
+ - ~/.config/alacritty/themes/themes/tomorrow_night_bright.yaml
